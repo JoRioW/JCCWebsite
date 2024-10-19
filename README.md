@@ -1,2 +1,3 @@
 ﻿# JCCWebsite
-Project akhir mata kuliah HCI
+Final Project for Human and Computer Interaction Course
+
