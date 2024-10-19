@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lusitana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div id="header-icon">
+            <img src="image\jcc-logo.png" alt="">
+        </div>
+        <div id="navbar">
+            <a id="home-text" class="nav-text" href="home.html">Home</a>
+            <a id="event-text" class="nav-text" href="event.html">Events</a>
+            <a id="price-text" class="nav-text" href="price.html">Price Lists</a>
+            <a id="about-text" class="nav-text" href="about.html">About Us</a>
+            <a id="contact-text" class="nav-text" href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content-contact">
+        <div class="content-image">
+            <img src="image\contactus\image 1.png" alt="">
+            <div id="content-contact-img-text">CONTACT US</div>
+        </div>
+        <div id="content-contact">
+            <form id="content-contact-fill">
+                <div id="contact-name" class="contact-input">
+                    <input class="content-contact-fill-vol" type="text" placeholder="Nama" id="username" onkeyup="validation_name()"/>
+                    <br>
+                    <span id="error-name"></span>
+                </div>
+                <div id="contact-phone" class="contact-input">
+                    <input id="userphone" class="content-contact-fill-vol" type="text" placeholder="Phone Number" onkeyup="validation_phone()"/>
+                    <br>
+                    <span id="error-phone"></span>
+                </div>
+                <div id="contact-email" class="contact-input">
+                    <input id="useremail" class="content-contact-fill-vol" type="text" placeholder="Email" onkeyup="validation_email()"/>
+                    <br>
+                    <span id="error-email"></span>
+                </div>
+                <div id="contact-message" class="contact-input">
+                    <textarea id="usermessage" placeholder="Message" cols="40vw" rows="10" onkeyup="validation_message()"></textarea>
+                    <br>
+                    <span id="error-message"></span>
+                </div>
+                <div id="contact-checkbox" class="contact-input" onclick="validation_email_phone()">
+                    <input id="check-phone" type="checkbox">Phone
+                    <input id="check-email" type="checkbox">Email
+                    <br>
+                    <span id="error-check"></span>
+                </div>
+                <span id="error-submit"></span>
+                <button id="contact-submit" onclick="return validation_all()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-icon">
+            <div id="footer-icon-1">
+                <img src="image\home\Facebook.png" alt="">
+            </div>
+            <div id="footer-icon-2">
+                <img src="image\home\Instagram Circle.png" alt="">
+            </div>
+        </div>
+        <div id="footer-text">Copyright © 2023 JCC. All Rights Reserved.</div>
+    </div>
+
+<script src="js\index.js"></script>
+</body>
+</html>
